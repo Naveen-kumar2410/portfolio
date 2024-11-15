@@ -1,0 +1,525 @@
+
+body{
+    margin: 0%;
+    height: 100%;
+    width: 100%;
+    /* background-image: url(bg6.jpg); */
+    background-color:rgb(46, 10, 46) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    background-position: center;
+    
+}
+
+#nav{
+   
+    width: 100%;
+    padding:5px 25px;
+    background-color: grey;
+
+}
+
+.menu ul{
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+
+}
+
+.menu li{
+
+    text-decoration: none;
+    display:inline-block;
+    margin-right: 85px;
+
+
+}
+.menu li a{
+    color: rgb(253, 251, 251);
+    gap: 5px;
+}
+
+.menu li a:hover{
+    color: rgb(9, 30, 225);
+    border-radius: 1px;
+
+    
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    padding: 50px;
+}
+
+.hero-content {
+    
+    font-size: 1rem;
+    text-align: left;
+    margin-top: 100px;
+    margin-left: 150px;
+    color: white;
+    
+
+}
+.hero-content h1{
+ font-size: 30px;
+}
+.hero-content h2{
+    font-size: 2rem;
+    color: yellow;
+   }
+
+.hero-content p{
+    font-size: 16px;
+}
+
+.hero-image {
+    display: flex; 
+    justify-content: center;
+    margin-top: 100px;
+    margin-right: 10px;
+    
+}
+
+.hero-image img {
+    height: 40%; /* Ensure you have units here */
+    width: 40%;
+    border-radius: 50%;
+    border: 5px solid rgb(19, 90, 137);
+}
+
+
+/* typewriter effect */
+.typewriter {
+    font-weight: bold;
+    color: #29f6eb; 
+    font-size: 20px;
+  }
+  
+  .typewriter::after {
+    content: '|';
+    animation: blink 0.7s infinite;
+  }
+  
+  @keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+.social-icons {
+    margin-top: 20px; 
+}
+
+.social-icons a {
+    text-decoration: none; 
+    color: beige;
+    margin-right: 15px; 
+    font-size: 34px; 
+}
+
+.social-icons a:hover {
+    color: #333; 
+}
+
+
+/* Title Section */
+.about {
+    margin-top: 0;
+    display: flex;
+    align-items: center; /* Vertically centers the content */
+    justify-content: space-between; /* Ensures space between image and text */
+    margin: 0;
+    padding: 0;
+    gap: 10px; /* Adds consistent space between image and text */
+    flex-wrap: wrap; /* Ensures it wraps on smaller screens */
+}
+#about-title {
+    text-align: center;
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+
+#a {
+    color: rgb(241, 241, 21); 
+}
+
+.about-image {
+    flex: 1;
+    max-width: 40%; /* Restricts image width to 40% */
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    display: block; /* Removes unwanted bottom space */
+}
+
+/* Styling for the text section */
+.about-me {
+    flex: 2;
+    color: #fff;
+    max-width: 55%; /* Restricts text section width */
+}
+
+.about-me h2 {
+    color: rgb(104, 163, 191);
+    margin-bottom: 15px; /* Adds space below h2 */
+}
+
+.about-me p {
+    color: #ffffff;
+    line-height: 1.6;
+    margin-bottom: 15px; /* Adds space below each paragraph */
+}
+
+#credit {
+    color: rgb(8, 186, 239);
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-top: 20px;
+}
+
+
+
+
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column; /* Stacks image and text on smaller screens */
+        align-items: center; /* Centers the content */
+    }
+
+    .about-image {
+        max-width: 80%; /* Makes the image smaller on mobile */
+        margin-bottom: 20px; /* Adds space below the image */
+    }
+
+    .about-me {
+        max-width: 90%; /* Makes the text area smaller on mobile */
+    }
+}
+
+
+
+#title{
+    text-align: center;
+    color: #ffffff;
+    font-size: 3rem;
+}
+
+
+.service {
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 30px;
+    padding: 30px;
+    width: 250px; 
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.service-container {
+    margin-right: 5%;
+    margin-left: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px; 
+}
+
+.service:hover {
+    transform: translatey(-10px);
+    background-color:lavender;
+    color: black;
+}
+
+.ser .highlight {
+    color: rgb(209, 236, 8); 
+}
+
+
+
+
+
+
+
+#skills{
+    text-align: center;
+    color: #ffffff;
+    font-size: 2rem;
+}
+.sk{
+    color: yellow;
+}
+
+.skills-section {
+    background-color: rgb(109, 62, 109);
+    padding: 40px;
+    width: 80%;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center-align text within the section */
+    margin:  auto;
+    margin-top: 50px;
+}
+
+
+.skills-section p {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 30px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center; /* Center the skills columns */
+    margin-top: 20px;
+}
+
+.skills-column {
+    width: 45%;
+    margin: 0 10px; /* Add horizontal margin to control space between columns */
+}
+
+.skills-column h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: 400;
+    color: #fff9f9;
+}
+
+.skill {
+    margin-bottom: 10px;
+}
+
+.skill span {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: rgb(248, 245, 245);
+    font-weight: 500;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.skills-column {
+    width: 45%;
+    background-color: rgba(255, 255, 255, 0.1); /* Light background for each column */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.skills-column h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill span {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* General styles for skill bars */
+.skill-bar {
+    background-color: #e0e0e0;
+    height: 20px;
+    position: relative;
+    border-radius: 90px;
+    overflow: hidden;
+}
+
+.skill-bar div {
+    height: 100%;
+    width: 0%; /* Default width before animation */
+    border-radius: 80px;
+    transition: width 1s ease-in-out;
+}
+
+/* Specific skill bar colors */
+#design-bar1 {
+    background-color: #34c2dc; /* Orange for Web Design */
+    width: 100%; /* Full width */
+}
+
+#design-bar2 {
+    background-color:#34c2dc; /* Green for Mobile Design */
+    width: 80%; /* Adjust width as per percentage */
+}
+
+#design-bar3 {
+    background-color: #34c2dc; /* Blue for Branding & Identity */
+    width: 85%;
+}
+
+#design-bar4 {
+    background-color: #34c2dc; /* Purple for DTP */
+    width: 75%;
+}
+
+#dev-bar1 {
+    background-color: rgb(93, 196, 93); /* Amber for HTML & CSS */
+    width: 100%;
+}
+
+#dev-bar2 {
+    background-color: rgb(93, 196, 93); /* Cyan for JavaScript/jQuery */
+    width: 90%;
+}
+
+#dev-bar3 {
+    background-color: rgb(93, 196, 93); /* Light Green for PHP & MySQL */
+    width: 75%;
+}
+
+#dev-bar4 {
+    background-color:  rgb(93, 196, 93); /* Deep Purple for WordPress */
+    width: 65%;
+}
+
+/* Add hover effects for a polished UI */
+.skill-bar div:hover {
+    filter: brightness(1.2); /* Slight glow effect */
+}
+
+
+
+
+
+/* contact */
+/* Contact Section Styling */
+#touch{
+    color: rgb(212, 229, 25);
+    font-family: cursive;
+}
+.container{
+    display: inline;
+}
+#contact {
+   
+    color: white;
+    padding: 80px 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  #contact h2 {
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 36px;
+    font-weight: 700;
+    color: #f0f0f0;
+  }
+  
+  .contact-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  
+  .contact-form, .contact-details {
+   flex-basis: 30%;
+
+
+  }
+  .contact-details{
+    margin-right: 0px;
+    display: inline;
+   
+  }
+  .contact-form .form-group {
+    margin-bottom: 20px;
+  }
+ .contact-form{
+    margin-left: 85px;
+ }
+  
+  .contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+  }
+  
+  .contact-form input:focus, .contact-form textarea:focus {
+    color: #56124c;
+    outline: none;
+  }
+  
+  .contact-form button {
+    background-color:plum;
+    color: #56124c;
+
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .contact-form button:hover {
+    color: #fbf8fa;
+    background-color:rgb(156, 100, 156);
+  }
+  
+  .contact-details h3 {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  .contact-details p {
+    margin-bottom: 12px;
+    font-size: 16px;
+  }
+  
+  .social-links a {
+    color: white;
+    margin-right: 15px;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px; 
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s, color 0.3s;
+  }
+  
+  .social-links a i {
+    font-size: 20px;
+  }
+  
+  .social-links a:hover {
+    border-bottom: 2px solid white;
+    color: #b074a7;
+  }
+  
+  .social-links a:hover i {
+    color: #b475ab;
+  }
+  
